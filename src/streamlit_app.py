@@ -33,6 +33,10 @@ with st.container():
 with st.container():
     c3.write("c3")
     c4.write("c4")
+
+with c1:
+    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+    st.line_chart(chart_data)
     
 
 
