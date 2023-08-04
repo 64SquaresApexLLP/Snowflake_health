@@ -5,7 +5,8 @@ import pandas as pd
 st.title("Custom Layout Example")
 
     # Create a sidebar
-# st.sidebar.header("Sidebar")
+
+st.sidebar.header("Sidebar")
 
     # Sidebar widgets
 # selected_option = st.sidebar.selectbox("Select an option", ["Option 1", "Option 2", "Option 3"])
