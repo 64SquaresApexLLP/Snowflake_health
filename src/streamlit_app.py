@@ -38,6 +38,18 @@ with st.container():
 with c1:
     chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
     st.line_chart(chart_data)
+
+with c2:
+    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+    st.line_chart(chart_data)
+
+with c3:
+    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+    st.line_chart(chart_data)
+
+with c4:
+    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+    st.line_chart(chart_data)
     
 
 
