@@ -22,28 +22,16 @@ st.title("Custom Layout Example")
 #     st.write("You selected Option 3.")
 
     # Create a row layout
-st.subheader("Row Layout")
-row1, row2 = st.beta_rows(2)
+c1, c2= st.columns(2)
+c3, c4= st.columns(2)
 
-col1, col2 =row1.beta_columns(2)  # Divide the page into 3 columns
+with st.container():
+    c1.write("c1")
+    c2.write("c2")
 
-    # Widgets in the first column
-with col1:
-    st.write("Column 1")
-
-    # Widgets in the second column
-with col2:
-    st.write("Column 2")
-
-col3, col4 =row2.beta_columns(2)  # Divide the page into 3 columns
-
-    # Widgets in the first column
-with col3:
-    st.write("Column 3")
-
-    # Widgets in the second column
-with col4:
-    st.write("Column 4")
+with st.container():
+    c3.write("c3")
+    c4.write("c4")
     
 
 
