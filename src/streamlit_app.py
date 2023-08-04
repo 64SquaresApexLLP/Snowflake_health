@@ -2,7 +2,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-
+custom_css = """
+    <style>
+    .custom-column {
+        border: 1px solid #000000;
+        padding: 10px;
+    }
+    </style>
+    """
+st.markdown(custom_css, unsafe_allow_html=True)
     # Create a sidebar
 
 st.sidebar.header("Sidebar")
