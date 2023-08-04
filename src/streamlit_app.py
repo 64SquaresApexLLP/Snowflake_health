@@ -9,3 +9,5 @@ my_cur.execute("select * from databases")
 my_catalog = my_cur.fetchall()
 streamlit.dataframe(my_catalog)
 
+st.title("custom layout")
+
