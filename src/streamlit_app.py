@@ -8,7 +8,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select * from SWEATSUITS")
 my_catalog = my_cur.fetchall()
 st.dataframe(my_catalog)
-q1 = st.text_input('Write your query','Write the query here')
+q1 = st.text_input('Write your query','')
 st.button('Run Query')
 if not q1:
   st.error('Please write a query')
