@@ -1,10 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
-
-
-def main():
     # Title of the web app
     st.title("Custom Layout Example")
 
