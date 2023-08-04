@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import matplotlib.pyplot as plt
 # Create a sidebar
 
 st.sidebar.header("Sidebar")
@@ -41,8 +41,13 @@ with c2:
     st.bar_chart(chart_data)
 
 with c3:
-    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
-    st.line_chart(chart_data)
+    arr = np.random.normal(1, 1, size=100)
+    fig, ax = plt.subplots()
+    ax.hist(arr, bins=20)
+    st.pyplot(fig)
+    
+    # chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+    # st.line_chart(chart_data)
 
 with c4:
     chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
