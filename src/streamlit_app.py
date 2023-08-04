@@ -1,4 +1,5 @@
 import streamlit as st
+pip install streamlit-option-menu
 from streamlit_option_menu import option_menu
 
 with st.sidebar:
