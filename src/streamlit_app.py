@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.sidebar.button("workloads)
+st.sidebar.button("workloads")
