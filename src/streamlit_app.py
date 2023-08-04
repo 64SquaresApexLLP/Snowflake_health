@@ -1,4 +1,4 @@
 import streamlit as st
 import streamlit.components as components
 
-components.iframe("mypage.html")
+components.html("mypage.html")
