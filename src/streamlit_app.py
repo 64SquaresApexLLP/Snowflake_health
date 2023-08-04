@@ -33,8 +33,7 @@ with st.container():
     c4.write("c4")
 
 with c1:
-    file=pd.read_csv('world-data-2023.csv')
-    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
     st.line_chart(chart_data)
 
 with c2:
