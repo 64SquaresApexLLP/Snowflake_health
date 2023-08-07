@@ -15,11 +15,11 @@ selected = option_menu(
     orientation = "horizontal",
 )
 if selected == "Home":
-  st.title(f"##You Have selected {selected}")
+  st.title(f"**You Have selected {selected}**")
 if selected == "Projects":
-  st.title(f"##You Have selected {selected}")
+  st.title(f"**You Have selected {selected}**")
 if selected == "Contact":
-  st.title(f"##You Have selected {selected}")
+  st.title(f"**You Have selected {selected}**")
 
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
