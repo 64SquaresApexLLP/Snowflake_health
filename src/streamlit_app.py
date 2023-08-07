@@ -36,7 +36,7 @@ with st.container():
     c4.write("c4")
 
 with c1:
-    df=pd.read_csv("world-data-2023.csv")
+    df=pd.read_csv("world-data-2023.csv",columns=["Country","Density"])
     st.write(df)
     
    
