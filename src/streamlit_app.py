@@ -18,7 +18,7 @@ with st.container():
 
 with c1:
     df=pd.read_csv("world-data-2023.csv")
-    st.write(df['Country','density'])
+    st.write(df['Country','Density'])
     
     
    
