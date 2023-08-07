@@ -32,7 +32,9 @@ with st.container():
 
 with c1:
     df=pd.read_csv("world-data-2023.csv")
-    st.write(df['Country',density])
+    chart_data=df['Country','density','Agricultural Land( %)'])
+    st.bar_chart(chart_data)
+    
     
    
 with c2:
