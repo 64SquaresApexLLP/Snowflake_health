@@ -35,7 +35,7 @@ with st.container():
     c4.write("c4")
 
 with c1:
-    df=read_csv('Snowflake_health/world-data-2023.csv')
+    df=pd.read_csv('Snowflake_health/world-data-2023.csv')
     st.dataframe(df)
 
 with c2:
