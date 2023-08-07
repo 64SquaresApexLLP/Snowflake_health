@@ -29,23 +29,19 @@ with st.container():
  
 # 1. Bar Chart comparing 'plant_name' with 'Low_End_of_Range'
 with c1:
-  st.header('Bar Chart: Low End of Range')
-  plt.figure(figsize=(10, 6))
-  plt.barh( df['Low_End_of_Range'],df['plant_name'],)
-  plt.ylabel('Plant Name') 
-  plt.xlabel('Low End of Range')
-  plt.xticks(rotation=90)
-  st.pyplot(plt)
-
+    st.header('Bar Chart: Low End of Range')
+    plt.figure(figsize=(6, 10))
+    plt.barh(df['plant_name'], df['Low_End_of_Range'])
+    plt.xlabel('Low End of Range')
+    plt.ylabel('Plant Name')
+    st.pyplot(plt)
 
 # 2. Bar Chart comparing 'plant_name' with 'High_End_of_Range'
 with c2:
-  st.header('Bar Chart: High End of Range')
-  plt.figure(figsize=(10, 6))
-  plt.barh( df['High_End_of_Range'],df['plant_name'],)
-  plt.ylabel('Plant Name')
-  plt.xlabel('High End of Range')
-  plt.xticks(rotation=90)
-  st.pyplot(plt)
-
+    st.header('Bar Chart: High End of Range')
+    plt.figure(figsize=(6, 10))
+    plt.barh(df['plant_name'], df['High_End_of_Range'])
+    plt.xlabel('High End of Range')
+    plt.ylabel('Plant Name')
+    st.pyplot(plt)
 
