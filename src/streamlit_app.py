@@ -4,12 +4,11 @@ from streamlit_option_menu import option_menu
 
 with st.sidebar:
   selected = option_menu(
-    menu_title = "none",
+    menu_title = none,
     options = ["Home","Projects","Contact"],
     icons = ["house","book","envelope"],
-   
     default_index = 0,
-    orientation = "Horizontal",
+    orientation = "horizontal",
     
   )
   if selected == "Home":
