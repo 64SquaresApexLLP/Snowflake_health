@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import snowflake.connector
+import streamlit_option_menu
+from streamlit_option_menu import option_menu
 st.header('Snowflake Healthcare App')
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
@@ -16,12 +18,6 @@ else:
   my_cur.execute(q1)
   my_catalog = my_cur.fetchall()
   st.dataframe(my_catalog)
-
-# import streamlit as st
-import streamlit_option_menu
-from streamlit_option_menu import option_menu
-
- 
 
 with st.sidebar:
   selected = option_menu(
