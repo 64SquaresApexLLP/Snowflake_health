@@ -29,11 +29,11 @@ else:
 
   )
 
- if selected == "Home":
+   if selected == "Home":
     st.title(f"You Have selected {selected}")
     
-  if selected == "Projects":
+   if selected == "Projects":
     st.title(f"You Have selected {selected}")
-  if selected == "Contact":
+   if selected == "Contact":
     st.title(f"You Have selected {selected}")
 
