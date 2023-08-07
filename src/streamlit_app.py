@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-# import matplotlib.pyplot as plt
+import matplotlib
+from matplotlib import pyplot as plt
 # Create a sidebar
 
 st.sidebar.header("Sidebar")
@@ -33,8 +34,13 @@ with st.container():
     c4.write("c4")
 
 with c1:
-    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
-    st.line_chart(chart_data)
+    x = [1,2,3]
+    y = [2,4,1]
+    plt.plot(x, y)
+    plt.xlabel('x - axis')
+    plt.ylabel('y - axis')
+    plt.title('My first graph!')
+    plt.show()
 
 with c2:
     chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
