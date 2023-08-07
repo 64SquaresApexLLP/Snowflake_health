@@ -19,8 +19,7 @@ else:
   my_catalog = my_cur.fetchall()
   st.dataframe(my_catalog)
 
-
-  selected = option_menu(
+selected = option_menu(
     menu_title = "Main Menu",
     options = ["Home","Projects","Contact"],
     icons = ["house","book","envelope"],
@@ -28,12 +27,11 @@ else:
     default_index = 0,
 
   )
+if selected == "Home":
+st.title(f"You Have selected {selected}")
 
-   if selected == "Home":
-    st.title(f"You Have selected {selected}")
-    
-   if selected == "Projects":
-    st.title(f"You Have selected {selected}")
-   if selected == "Contact":
-    st.title(f"You Have selected {selected}")
+if selected == "Projects":
+st.title(f"You Have selected {selected}")
+if selected == "Contact":
+st.title(f"You Have selected {selected}")
 
