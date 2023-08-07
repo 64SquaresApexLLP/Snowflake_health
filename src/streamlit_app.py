@@ -32,8 +32,8 @@ with c1:
   st.header('Bar Chart: Low End of Range')
   plt.figure(figsize=(10, 6))
   plt.bar(df['plant_name'], df['Low_End_of_Range'])
-  plt.xlabel('Plant Name') 
-  plt.ylabel('Low End of Range')
+  plt.ylabel('Plant Name') 
+  plt.xlabel('Low End of Range')
   plt.xticks(rotation=90)
   st.pyplot(plt)
 
@@ -43,8 +43,8 @@ with c2:
   st.header('Bar Chart: High End of Range')
   plt.figure(figsize=(10, 6))
   plt.bar(df['plant_name'], df['High_End_of_Range'])
-  plt.xlabel('Plant Name')
-  plt.ylabel('High End of Range')
+  plt.ylabel('Plant Name')
+  plt.xlabel('High End of Range')
   plt.xticks(rotation=90)
   st.pyplot(plt)
 
