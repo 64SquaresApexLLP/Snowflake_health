@@ -35,8 +35,8 @@ with st.container():
     c4.write("c4")
 
 with c1:
-    df=pd.read_csv('Snowflake_health/world-data-2023.csv')
-    st.dataframe(df)
+    # df=pd.read_csv('Snowflake_health/world-data-2023.csv')
+    # st.dataframe(df)
 
 with c2:
     chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
