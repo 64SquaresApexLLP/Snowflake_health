@@ -17,11 +17,9 @@ else:
   my_catalog = my_cur.fetchall()
   st.dataframe(my_catalog)
 
-
-#import streamlit as st
-
-import streamlit as st
-
+# import streamlit as st
+import streamlit_option_menu
+from streamlit_option_menu import option_menu
 
  
 
@@ -31,7 +29,7 @@ with st.sidebar:
     options = ["Home","Projects","Contact"],
     icons = ["house","book","envelope"],
     menu_icon = "cast",
-    default_index = 1,
+    default_index = 0,
 
   )
   if selected == "Home":
@@ -40,3 +38,4 @@ with st.sidebar:
     st.title(f"You Have selected {selected}")
   if selected == "Contact":
     st.title(f"You Have selected {selected}")
+
