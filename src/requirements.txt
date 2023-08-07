@@ -1,1 +1,4 @@
 # requirements.txt
+streamlit-option-menu
+streamlit
+snowflake-connector-python
