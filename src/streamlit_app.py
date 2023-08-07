@@ -7,7 +7,7 @@ selected = option_menu(
     options = ["Home","Projects","Contact"],
     icons = ["house","book","envelope"],
     default_index = 0,
-    orientation = "horizontal",
+    orientation = "verticle",
   )
 if selected == "Home":  
   st.title(f"You Have selected {selected}")
