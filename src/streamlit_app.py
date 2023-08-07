@@ -2,11 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-
-# import matplotlib
-# from matplotlib import pyplot as plt
-# Create a sidebar
-
 st.sidebar.header("Sidebar")
 
     # Sidebar widgets
@@ -37,7 +32,7 @@ with st.container():
 
 with c1:
     df=pd.read_csv("world-data-2023.csv")
-    st.write(df['Country'])
+    st.write(df['Country',density])
     
    
 with c2:
