@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
- st.header("Jayesh")
+st.header("Jayesh")
 
 with st.sidebar:
   selected = option_menu(
