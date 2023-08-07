@@ -13,13 +13,13 @@ with st.sidebar:
     default_index = 0,
     #orientation = "horizontal",
 )
-if selected == "Home":
-  st.header('Snowflake Healthcare App')
-  st.subheader(f"**You Have selected {selected}**")
-if selected == "Projects":
-  st.subheader(f"**You Have selected {selected}**")
-if selected == "Contact":
-  st.subheader(f"**You Have selected {selected}**")
+    if selected == "Home":
+      st.header('Snowflake Healthcare App')
+      st.subheader(f"**You Have selected {selected}**")
+    if selected == "Projects":
+      st.subheader(f"**You Have selected {selected}**")
+    if selected == "Contact":
+      st.subheader(f"**You Have selected {selected}**")
 
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
