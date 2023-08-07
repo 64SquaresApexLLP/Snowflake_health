@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px
 
 # import matplotlib
 # from matplotlib import pyplot as plt
@@ -35,8 +36,9 @@ with st.container():
     c4.write("c4")
 
 with c1:
-    chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
-    st.bar_chart(chart_data)
+    df=pd.read_csv("world-data-2023.csv")
+    st.write(df)
+    
    
 with c2:
     chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
