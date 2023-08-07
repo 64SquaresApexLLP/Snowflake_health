@@ -3,11 +3,10 @@ import pandas as pd
 import snowflake.connector
 import streamlit_option_menu
 from streamlit_option_menu import option_menu
-st.header('Snowflake Healthcare App')
 
 
 selected = option_menu(
-    menu_title = "Main Menu",
+    menu_title = " ",
     options = ["Home","Projects","Contact"],
     icons = ["house","book","envelope"],
     menu_icon = "cast",
@@ -15,11 +14,12 @@ selected = option_menu(
     orientation = "horizontal",
 )
 if selected == "Home":
+  st.header('Snowflake Healthcare App')
   st.subheader(f"**You Have selected {selected}**")
 if selected == "Projects":
-  st.title(f"**You Have selected {selected}**")
+  st.subheader(f"**You Have selected {selected}**")
 if selected == "Contact":
-  st.title(f"**You Have selected {selected}**")
+  st.subheader(f"**You Have selected {selected}**")
 
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
