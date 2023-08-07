@@ -16,7 +16,7 @@ with st.container():
 
 with c1:
     df=pd.read_csv("world-data-2023.csv")
-    st.bar_chart(df['Country'])
+    st.bar_chart(df['Country','Land Area(Km2)'])
            
 with c2:
     chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
