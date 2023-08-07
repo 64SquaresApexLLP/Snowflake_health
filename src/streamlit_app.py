@@ -20,13 +20,3 @@ with st.sidebar:
   if selected == "Contact":
     st.title(f"You Have selected {selected}")
 
-footer = """
-<style>
-footer:after{
-content: 'Copyright @ 2023:64-squares';
-display: block;
-position: reletive;
-color: tomato;
-}
-</style>
-"""
