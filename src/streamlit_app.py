@@ -8,7 +8,7 @@ with st.sidebar:
     selected = option_menu(
     menu_title = "Main Menu",
     options = ["Home","Warehouse","Query Optimization and Processing","Storage","Contact Us"],
-    icons = ["house","book","circus_tent"],
+    icons = ["house","book",":circus_tent:"],
     menu_icon = "cast",
     default_index = 0,
     #orientation = "horizontal",
