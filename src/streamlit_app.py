@@ -4,22 +4,11 @@ import snowflake.connector
 import streamlit_option_menu
 from streamlit_option_menu import option_menu
 
-html_code = """
-<div style="text-align: center;">
-    <div style="width: 60px; height: 60px; background-color: #007BFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
-        DB
-    </div>
-    <div style="margin-top: 10px; font-weight: bold;">Database</div>
-</div>
-"""
-
-st.markdown(html_code, unsafe_allow_html=True)
-
 with st.sidebar:
     selected = option_menu(
     menu_title = "Main Menu",
     options = ["Home","Warehouse","Query Optimization and Processing","Storage","Contact Us"],
-    icons = ["house","book","envelope","activity"],
+    icons = ["house","book","activity","envelope"],
     menu_icon = "cast",
     default_index = 0,
     #orientation = "horizontal",
