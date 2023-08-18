@@ -9,9 +9,3 @@ my_cur.execute("SELECT TABLE_NAME, ROW_COUNT, RETENTION_TIME FROM db_jay.informa
 data = my_cur.fetchall()
 
 
-
-#with open("src/custom.html", "r") as f:
-#    html_string = f.read()
-
-#st.components.v1.html(html_string)
-
