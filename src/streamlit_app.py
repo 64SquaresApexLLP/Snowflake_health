@@ -10,8 +10,8 @@ data = my_cur.fetchall()
 
 
 
-with open("src/custom.html", "r") as f:
-    html_string = f.read()
+#with open("src/custom.html", "r") as f:
+#    html_string = f.read()
 
-st.components.v1.html(html_string)
+#st.components.v1.html(html_string)
 
