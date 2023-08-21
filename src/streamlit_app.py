@@ -1,11 +1,37 @@
-import snowflake.connector
 import streamlit as st
 import pandas as pd
-import numpy as np
+import snowflake.connector
+import streamlit_option_menu
+from streamlit_option_menu import option_menu
 
-my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("SELECT TABLE_NAME, ROW_COUNT, RETENTION_TIME FROM db_jay.information_schema.tables;")
-data = my_cur.fetchall()
+with st.sidebar:
+    selected = option_menu(
+    menu_title = "Main Menu",
+    options = ["Home","Warehouse","Query Optimization and Processing","Storage","Contact Us"],
+    icons = ["house","gear","activity","snowflake","envelope"],
+    menu_icon = "cast",
+    default_index = 0,
+    #orientation = "horizontal",
+)
+if selected == "Home":
+    st.header('Snowflake Healthcare App')
+    my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
+    my_cur = my_cnx.cursor()
+    # run a snowflake query and put it all in a var called my_catalog
+    my_cur.execute("select * from SWEATSUITS")
+    my_catalog = my_cur.fetchall()
+    st.dataframe(my_catalog)
+    q1 = st.text_input('Write your query','')
+    st.button('Run Query')
+    if not q1:
+      st.error('Please write a query')
+    else:
+      my_cur.execute(q1)
+      my_catalog = my_cur.fetchall()
+      st.dataframe(my_catalog)
 
-
+if selected == "Projects":
+    st.subheader(f"**You Have selected {selected}**")
+    
+if selected == "Contact":
+    st.subheader(f"**You Have selected {selected}**")
