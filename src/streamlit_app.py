@@ -4,14 +4,14 @@ import snowflake.connector
 import streamlit_option_menu
 from streamlit_option_menu import option_menu
 
-#with st.sidebar:
+with st.sidebar:
     selected = option_menu(
     menu_title = "Main Menu",
     options = ["Home","Warehouse","Query Optimization and Processing","Storage","Contact Us"],
     icons = ["house","gear","activity","snowflake","envelope"],
     menu_icon = "cast",
     default_index = 0,
-    #orientation = "horizontal",
+    orientation = "horizontal",
 )
 if selected == "Home":
     st.header('Snowflake Healthcare App')
