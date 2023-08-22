@@ -11,7 +11,7 @@ with st.sidebar:
     icons = ["house","gear","activity","snowflake","envelope"],
     menu_icon = "cast",
     default_index = 0,
-    #orientation = "horizontal",
+    orientation = "horizontal",
 )
 if selected == "Home":
     st.header('Snowflake Healthcare App')
