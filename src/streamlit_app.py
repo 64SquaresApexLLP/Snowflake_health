@@ -15,6 +15,9 @@ with st.sidebar:
 )
 if selected == "Home":
     st.header('Snowflake Healthcare App')
+    
+if selected == "Projects":
+    st.subheader(f"**You Have selected {selected}**")
     my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
     my_cur = my_cnx.cursor()
     # run a snowflake query and put it all in a var called my_catalog
@@ -30,8 +33,6 @@ if selected == "Home":
       my_catalog = my_cur.fetchall()
       st.dataframe(my_catalog)
 
-if selected == "Projects":
-    st.subheader(f"**You Have selected {selected}**")
     
 if selected == "Contact":
     st.subheader(f"**You Have selected {selected}**")
