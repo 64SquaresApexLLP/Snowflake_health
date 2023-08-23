@@ -16,7 +16,7 @@ with st.sidebar:
 if selected == "Home":
     st.header('Snowflake Healthcare App')
     
-if selected == "Projects":
+if selected == "Warehouse":
     st.subheader(f"**You Have selected {selected}**")
     my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
     my_cur = my_cnx.cursor()
