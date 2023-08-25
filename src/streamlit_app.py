@@ -8,7 +8,7 @@ with st.sidebar:
     options = ["Home","Projects","Contact"],
     icons = ["house","book","envelope"],
     default_index = 0,
-    orientation = "verticle",
+    orientation = "horizontal",
   )
 if selected == "Home":  
   st.title(f"You Have selected {selected}")
