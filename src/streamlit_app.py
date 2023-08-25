@@ -10,11 +10,5 @@ from streamlit_option_menu import option_menu
     default_index = 0,
     orientation = "horizontal",
 
-if selected == "Home":  
-  st.title(f"You Have selected {selected}")
-if selected == "Projects":
-  st.title(f"You Have selected {selected}")
-if selected == "Contact":
-  st.title(f"You Have selected {selected}")
 
   
