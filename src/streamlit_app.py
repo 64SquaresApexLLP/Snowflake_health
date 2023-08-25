@@ -10,5 +10,5 @@ from streamlit_option_menu import option_menu
     default_index = 0,
     orientation = "horizontal",
 
-
+    )
   
