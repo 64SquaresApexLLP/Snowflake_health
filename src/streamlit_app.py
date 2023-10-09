@@ -3,17 +3,20 @@ import streamlit_option_menu
 from streamlit_option_menu import option_menu
 
 import requests
-import streamlit as st
 
-data = requests.get("'http://3.111.58.87:5000/test'").json()
+def main():
+    st.title("Streamlit API Example")
+    
+    # Make an API call
+    response = requests.get("http://3.111.58.87:5000/test")
+    
+    if response.status_code == 200:
+        data = response.json()
+        st.write("API Response Data:")
+        st.write(data)
+    else:
+        st.error("Failed to retrieve data from the API.")
 
-st.write(data)
-selected = option_menu(
-    menu_title =None,
-    options = ["Home","Projects","Contact"],
-    icons = ["house","book","envelope"],
-    default_index = 0,
-    orientation = "horizontal",
-
-)
+if __name__ == "__main__":
+    main()
   
