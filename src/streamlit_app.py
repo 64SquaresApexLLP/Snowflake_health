@@ -11,7 +11,7 @@ def main():
     response = requests.get("http://3.111.58.87:5000/test")
     
     if response.status_code == 200:
-        data = response.json()
+        data = response
         st.write("API Response Data:")
         st.write(data)
     else:
