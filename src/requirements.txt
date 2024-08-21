@@ -1,2 +1,7 @@
 # requirements.txt
 snowflake-connector-python
+pandas
+plotly
+numpy
+geopandas
+snowflake
